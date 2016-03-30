@@ -12,6 +12,7 @@ ListingController = ($scope, $state, $sce, SharedService, ListingService) ->
   $scope.favorites = ListingService.favorites
   $scope.activeOptionsClass = null
   $scope.eligibilityYearlyIncome = ListingService.eligibilityYearlyIncome()
+  $scope.householdSize = ListingService.getHouseholdSize()
 
   $scope.toggleFavoriteListing = (listing_id) ->
     ListingService.toggleFavoriteListing(listing_id)

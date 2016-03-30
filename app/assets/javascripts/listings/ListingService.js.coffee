@@ -49,6 +49,9 @@ ListingService = ($http, $localStorage) ->
     else
       Service.eligibility_filters.income_total
 
+  Service.getHouseholdSize = ->
+    Service.eligibility_filters.household_size
+
   ###################################### Salesforce API Calls ###################################
 
   Service.getListing = (_id) ->
