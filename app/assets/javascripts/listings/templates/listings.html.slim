@@ -17,7 +17,7 @@ section.results-bar.bg-mist.padding-top
         strong
         | {{ ' ' + householdSize + ' people and ' }}
         strong
-        | {{ ' $' + eligibilityYearlyIncome + '/month' }}
+        | {{ eligibilityYearlyIncome | currency }}/month
         a.button.attention.tiny ui-sref="dahlia.eligibility-estimator" Edit Eligibility
 
 
